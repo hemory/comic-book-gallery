@@ -26,4 +26,5 @@ namespace ComicBookGallery.Models
             }
         }
     }
+
 }
