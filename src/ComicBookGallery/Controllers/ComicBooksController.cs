@@ -25,4 +25,7 @@ namespace ComicBookGallery.Controllers
             return View(comicBook);
         }
     }
+
+
+    // Don't make any changes to this class!
 }
