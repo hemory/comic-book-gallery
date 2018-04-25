@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Web.Mvc;
@@ -43,7 +44,7 @@ namespace Treehouse.FitnessFrog.Controllers
         }
         [ActionName("Add")]
         [HttpPost]
-        public ActionResult Add(string date, string activityId, string duration, string intensity, string exclude, string notes)
+        public ActionResult Add(DateTime? date, int? activityId, double? duration, Entry.IntensityLevel? intensity, bool? exclude, string notes)
         {
             ViewBag.Date = date;
             ViewBag.ActivityId = activityId;
